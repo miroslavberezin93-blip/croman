@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPO_URL="https://github.com/miroslavberezin93-blip/croman.git"
+REPO_URL="https://github.com/miroslavberezin93-blip/croman"
 INSTALL_DIR="$HOME/.local/bin"
 TMP_DIR="$(mktemp -d)"
 
