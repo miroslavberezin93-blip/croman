@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     if (argc == 1) {
-        printf("%s version 1.0.0\nConverts integer to a Roman numeral\nTry %s --help for more info\n", argv[0], argv[0]);
+        printf("%s version 1.0.1\nConverts integer to a Roman numeral\nTry %s --help for more info\n", argv[0], argv[0]);
         return 0;
     }
     if (strcmp(argv[1], "--help") == 0) {
@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
         return 0;
     }
     if (strcmp(argv[1], "--version") == 0) {
-        printf("%s version 1.0.0\n", argv[0]);
+        printf("%s version 1.0.1\n", argv[0]);
         return 0;
     }
     char *symbols[13] = {"I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"};
