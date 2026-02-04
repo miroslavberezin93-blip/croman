@@ -7,13 +7,13 @@ Convert integers (1–3999) to Roman numerals in Linux.
 ```bash
 curl -s https://raw.githubusercontent.com/miroslavberezin93-blip/croman/main/bash/install.sh | bash
 ```
+After that, open a new terminal (or run source ~/.bashrc) and use
 
 ## Uninstall
 
 ```
 curl -s https://raw.githubusercontent.com/miroslavberezin93-blip/croman/main/bash/uninstall.sh | bash
 ```
-After that, open a new terminal (or run source ~/.bashrc) and use
 
 ## Usage
 ```
