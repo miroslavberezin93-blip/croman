@@ -4,19 +4,19 @@
 
 int main(int argc, char *argv[]) {
     if (argc > 2) {
-        printf("ERROR: %s takes two arguments: %s <integer>\n", argv[0], argv[0]);
+        printf("ERROR: croman takes two arguments: croman <integer>\n");
         return 1;
     }
     if (argc == 1) {
-        printf("%s version 1.0.1\nConverts integer to a Roman numeral\nTry %s --help for more info\n", argv[0], argv[0]);
+        printf("croman version 1.0.1\nConverts integer to a Roman numeral\nTry croman --help for more info\n");
         return 0;
     }
     if (strcmp(argv[1], "--help") == 0) {
-        printf("Usage: %s <integer>\n", argv[0]);
+        printf("Usage: croman <integer>\n");
         return 0;
     }
     if (strcmp(argv[1], "--version") == 0) {
-        printf("%s version 1.0.1\n", argv[0]);
+        printf("croman version 1.0.1\n");
         return 0;
     }
     char *symbols[13] = {"I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"};
@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
         printf("ERROR: Number must be between 1 and 3999\n");
         return 1;
     }
-    char *result = malloc(64);
+    char result[10];
     result[0] = '\0';
     for (int i = 12; i >= 0; i--) {
         while (input >= values[i]) {
@@ -40,6 +40,5 @@ int main(int argc, char *argv[]) {
         }
     }
     printf("%s\n", result);
-    free(result);
     return 0;
 }
